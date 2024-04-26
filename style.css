@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url();
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 2%;
+    padding-right: 3%;
+    font-size: bold;
+}
+
+
+h1{
+    color: white;
+    font-size: 45px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:aqua;
+}
+
+
+
+.slider-box{
+    width: 100%;
+    height: 400px;
+    margin: 25px auto 0;
+    overflow: hidden;
+    border: 4px solid #ffffff; /* Añade un borde sólido de 2px de ancho y color negro */
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+    height: 422px;
+}
+
+@keyframes slide {
+    0% {margin-left: 0; }
+    20% {margin-left: 0; }
+
+    25% {margin-left: -100%; }
+    45% {margin-left: -100%; }
+
+    50% {margin-left: -200%; }
+    70% {margin-left: -200%; }
+
+}
+
+@media(max-width:1250px) {
+
+    body{
+        padding: 30px;
+    }
+
+    .slider-box {
+        width: 100%;
+    }
+
+}
+
+.cuadro-descriptivo {
+    background-color: rgb(139, 134, 134) ; /* Color de fondo del cuadro */
+    padding: 32px; /* Espacio interno del cuadro */
+    border: 0px; /* Borde del cuadro */
+    margin-top: 0px; /* Espacio superior entre el contenido principal y el cuadro */
+  }
+  
+  /* Estilos para el título del cuadro */
+  .cuadro-descriptivo h2 {
+    color: white;
+    margin-top: 0; /* Elimina el margen superior del título */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    align-items: center;
+    font-size: 35px;
+    padding-left: 42%;
+  }
+  .cuadro-descriptivo p {
+    color: white; /* Color del texto del párrafo */
+    font-size: 20px; /* Tamaño de fuente del párrafo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 10%;
+    padding-right: 0%;
+    font-size: 25;
+  }
+
+  .cuadro-descriptivo img{
+    flex-wrap: wrap;
+    margin-left: 25x; /* Margen a la derecha para separar la imagen del texto */
+    width: 150px;
+    height: 90px;
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+    flex-direction: column; /* Cambia a apilado en dispositivos pequeños */
+  }
+
+
+  
+
+  .descripcion h2{
+    color: white;
+    margin-top: 0; /* Elimina el margen superior del título */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    font-size: 65px;
+    padding-left: 18%;
+    font-family: Arial, sans-serif;
+  }
+
+  .parrafo {
+    color: white;
+    margin-top: 0; /* Elimina el margen superior del título */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    font-size: 35px;
+    padding-left: 8%;
+    font-family: Arial, sans-serif;
+  }
+
+  .parrafo img {
+    flex-wrap: wrap;
+    margin-right: 10px; /* Margen a la derecha para separar la imagen del texto */
+    width: 700px;
+    height: 850px;
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+    flex-direction: column; /* Cambia a apilado en dispositivos pequeños */
+  }
+  
+  .imagen-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente */
+    margin-right: 10px; /* Margen a la derecha para separar la imagen del texto */
+    margin-left: 12px;
+  }
+  
+  /* Estilo opcional para los botones */
+  .imagen-btn img {
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Para mantener la proporción */
+  }
